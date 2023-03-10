@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @media (max-width: 768px) {
+
     *,
     *::after,
     *::before {
         box-sizing: border-box;
     }
+
     .logo h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -20,11 +23,41 @@
         padding: 18px 21px;
         width: 100vw;
         position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .conceito h3 {
         color: white;
         font-weight: 400;
         font-size: 18px;
+    }
+
+    .inferior {
+        height: 13vh;
+        width: 100vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+    }
+
+    .botaoFecharCompra {
+        margin: 0 7.5vw;
+    }
+
+    .botaoFecharCompra button {
+        width: 85vw;
+        height: 10vh;
+        margin: 1.5vh 0;
+        border: none;
+        position: fixed;
+        border-radius: 50px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        background-color: #CBCBCB;
+        padding: 5px 50px;
     }
 }
