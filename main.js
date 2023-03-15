@@ -6,8 +6,8 @@ function selecionarPedido(e) {
     } else {
         if (this.id == 'prato') {
             const pratos = document.querySelectorAll('#prato');
-            for (let i =0; i<pratos.length; i++){
-                if (pratos[i].classList.contains('selecionado')){
+            for (let i = 0; i < pratos.length; i++) {
+                if (pratos[i].classList.contains('selecionado')) {
                     const elemento = document.querySelectorAll('#prato #check');
                     elemento.forEach(check => check.remove())
                 }
@@ -16,8 +16,8 @@ function selecionarPedido(e) {
         }
         if (this.id == 'bebida') {
             const bebidas = document.querySelectorAll('#bebida');
-            for (let i =0; i<bebidas.length; i++){
-                if (bebidas[i].classList.contains('selecionado')){
+            for (let i = 0; i < bebidas.length; i++) {
+                if (bebidas[i].classList.contains('selecionado')) {
                     const elemento = document.querySelectorAll('#bebida #check');
                     elemento.forEach(check => check.remove())
                 }
@@ -26,8 +26,8 @@ function selecionarPedido(e) {
         }
         if (this.id == 'sobremesa') {
             const sobremesas = document.querySelectorAll('#sobremesa');
-            for (let i =0; i<sobremesas.length; i++){
-                if (sobremesas[i].classList.contains('selecionado')){
+            for (let i = 0; i < sobremesas.length; i++) {
+                if (sobremesas[i].classList.contains('selecionado')) {
                     const elemento = document.querySelectorAll('#sobremesa #check');
                     elemento.forEach(check => check.remove())
                 }
@@ -39,5 +39,13 @@ function selecionarPedido(e) {
         check.setAttribute('id', 'check');
         this.classList.add('selecionado');
         this.children[3].appendChild(check);
+        const pedidosSelecionados = document.querySelectorAll('.selecionado')
+        if (pedidosSelecionados.length == 3){
+            const botao = document.getElementById('fecharPedido');
+            botao.textContent = "Fechar pedido";
+            botao.removeAttribute('id', 'fecharPedido');
+            botao.setAttribute('class', 'fecharPedido');
+        }
     }
 }
+
