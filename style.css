@@ -23,8 +23,10 @@
         padding: 18px 16px;
         width: 100vw;
         position: fixed;
+        overflow: hidden;
         top: 0;
         left: 0;
+        z-index: 1;
     }
 
     .conceito h3 {
@@ -52,7 +54,6 @@
         height: 10vh;
         margin: 1.5vh 0;
         border: none;
-        position: fixed;
         border-radius: 50px;
         font-family: 'Roboto', sans-serif;
         color: white;
@@ -114,6 +115,7 @@
     }
     #check {
         color: #32B72F;
+        z-index: 0;
     }
     .valor {
         display: flex;
